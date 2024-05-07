@@ -1,0 +1,22 @@
+{
+  "name": "kilkennylj.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website created by Liam Kilkenny",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilkennylj/kilkennylj.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Liam Kilkenny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kilkennylj/kilkennylj.github.io/issues"
+  },
+  "homepage": "https://github.com/kilkennylj/kilkennylj.github.io#readme"
+}
