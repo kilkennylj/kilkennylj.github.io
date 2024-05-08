@@ -12,6 +12,8 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v4
