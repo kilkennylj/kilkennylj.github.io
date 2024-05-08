@@ -2,12 +2,12 @@ name: CI
 
 on:
   workflow_dispatch:
-    push:
-      branches:
-        - main
-    pull_request:
-      branch:
-        - main
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
   setup:
@@ -30,6 +30,8 @@ jobs:
         run: rm -rf docs
       - name: Change "build" to "docs"
         run: mv build docs
+      - name: Testing
+        run: ls
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
