@@ -6,7 +6,7 @@ function HomeContent()
 {
     return(
         <div className="homeContent">
-        Content hello wolrd i am typing typing tpying kefsdf
+        Content. Here I will introduce the website and the overall idea of all of this stuff.
         </div>
     );
 };
