@@ -20,7 +20,7 @@ const NavBar = () =>
                     <a href="/resume">Resume</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/blog">Blog</a>
                 </li>
             </ul>
         </div>
