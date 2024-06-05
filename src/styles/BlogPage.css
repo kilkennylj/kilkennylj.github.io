@@ -6,11 +6,21 @@
 
 .blogContainer
 {
-    display: flex;
-    height: 100vh;
-    background: #CFC7FF;
-    flex-direction: row;
-    max-width: 100vw;
-    font-size: 1.25rem;
-    padding: 1rem;
+  display: flex;
+  height: 100vh;
+  background: #CFC7FF;
+  flex-direction: row;
+  max-width: 100vw;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.blog
+{
+  display: flex;
+}
+
+.postCard
+{
+  display: flex;
 }
