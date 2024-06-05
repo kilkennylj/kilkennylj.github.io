@@ -40,7 +40,7 @@ function Blog()
 
     return(
         <div className="blog">
-            { posts.map((post) => (<PostCard post={post.node} key={post.node.title} />)) }
+            { posts.map((post) => (<PostCard post={post.node} key={post.node.id} />)) }
         </div>
     );
 };
