@@ -18,8 +18,10 @@ const PostCard = ({ post }) =>
 
     return(
         <div className="postCard">
-            <h1>{post.title}</h1>
-            <h2>{post.excerpt}</h2>
+            <div className="headers">
+                <h1>{post.title}</h1>
+                <h2>{post.excerpt}</h2>
+            </div>
             <div className="blogContent">
                 {postContent}
             </div>
