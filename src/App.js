@@ -10,7 +10,7 @@ import './styles/App.css';
 function App() {
   return (
     <div className="siteHolder">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <NavBar />
           <div className="pageHolder">
             <Routes>
