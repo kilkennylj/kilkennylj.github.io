@@ -17,7 +17,6 @@ export const fetchPosts = async () =>
                 url
               }
             }
-            createdAt
             slug
             title
             excerpt
@@ -25,10 +24,11 @@ export const fetchPosts = async () =>
               raw
             }
             id
+            publishedAt
           }
         }
       }
-    }    
+    }
     `;
     const result = await request(graphqlAPI, query)
     return result.postsConnection.edges;

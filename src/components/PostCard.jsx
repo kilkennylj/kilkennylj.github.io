@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/BlogPage.css';
+import Moment from 'react-moment';
 
 const PostCard = ({ post }) =>
 {
@@ -21,6 +22,7 @@ const PostCard = ({ post }) =>
             <div className="headers">
                 <h1>{post.title}</h1>
                 <h2>{post.excerpt}</h2>
+                <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
             </div>
             <div className="blogContent">
                 {postContent}
