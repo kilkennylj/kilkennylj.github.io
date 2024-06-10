@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../styles/BlogPage.css';
-import { PostCard, PostWidget } from '../components/';
+import { PostCard } from '../components/';
 import { fetchPosts } from '../graphcms';
 
 // All of the blog stuff is unfinished. Just wanted to add the files so I can easily remember the thought process.
