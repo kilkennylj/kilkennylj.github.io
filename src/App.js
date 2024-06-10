@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomePage from './pages/HomePage';
 import NavBar from './components/NavBar';
@@ -10,7 +10,7 @@ import './styles/App.css';
 function App() {
   return (
     <div className="siteHolder">
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <NavBar />
           <div className="pageHolder">
             <Routes>
