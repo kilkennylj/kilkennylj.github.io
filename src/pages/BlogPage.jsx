@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/BlogPage.css';
+import Blog from '../components/Blog';
 
 const BlogPage = () =>
 {
