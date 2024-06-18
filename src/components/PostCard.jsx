@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
+import { Link } from 'react-router-dom';
 
 const PostCard = ({ post }) =>
 {
@@ -24,8 +25,10 @@ const PostCard = ({ post }) =>
                 <h2>{post.excerpt}</h2>
                 <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
             </div>
-            <div className="blogContent">
-                {postContent}
+            <div className="postButton">
+                <Link to={`/post/${post.slug}`}>
+                    <span className="buttonText">Continue Reading</span>
+                </Link>
             </div>
         </div>
     );
