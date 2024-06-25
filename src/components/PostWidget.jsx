@@ -3,21 +3,31 @@ import React, { useState, useEffect } from 'react';
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
 import Link from 'next/link';
-import { getRecentPosts } from '../graphcms';
+import { getSimilarPosts, getRecentPosts } from '../graphcms';
 
-function PostWidget ()
+function PostWidget ({ categories, slug })
 {
-    const [recentPosts, setRecentPosts] = useState([]);
+    const [relatedPosts, setRelatedPosts] = useState([]);
 
     useEffect(() =>
     {
-        getRecentPosts()
-            .then((result) => setRecentPosts(result))
-    }, []);
+        if (slug)
+        {
+            getSimilarPosts(categories, slug).then((result) => {
+                setRelatedPosts(result)});
+        }
+
+        else
+        {
+            getRecentPosts().then((result) => {
+                setRelatedPosts(result)});
+        }
+        
+    }, [slug]);
     return(
         <div className="widgetContainer">
-            <h3>Recent Posts</h3>
-            {recentPosts.map((post) =>
+            <h3>{slug ? 'Related Posts' : 'Recent Posts'}</h3>
+            {relatedPosts.map((post) =>
             (
                 <div key={post.slug} className="widgetItem">
                     <Moment date={post.publishedAt} format="MM/DD/YYYY"/>

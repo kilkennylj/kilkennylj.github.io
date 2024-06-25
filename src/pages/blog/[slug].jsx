@@ -3,7 +3,7 @@ import React from 'react';
 import '../../styles/BlogPage.css';
 
 import { fetchPosts, fetchPostDetails } from '../../graphcms';
-import { PostDetail, PostWidget, Author, Comments, CommentsForm} from '../../components'
+import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories } from '../../components'
 
 const PostDetails = ({ post }) =>
 {
@@ -15,8 +15,9 @@ const PostDetails = ({ post }) =>
                 <CommentsForm slug={ post.slug }/>
                 <Comments slug={ post.slug }/>
             </div>
-            <div>
-                <PostWidget />
+            <div className="sidebar">
+                <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
+                <Categories />
             </div>
         </div>
     );

@@ -78,6 +78,7 @@
   background: white;
   border-radius: 1rem;
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 .widgetItem
@@ -98,4 +99,10 @@
 h3
 {
   border-bottom: .2rem solid #03002E;
+}
+
+.category
+{
+  display: block;
+  color: black;
 }
