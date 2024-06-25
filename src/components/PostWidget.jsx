@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { getRecentPosts } from '../graphcms';
 
 function PostWidget ()
@@ -21,7 +21,7 @@ function PostWidget ()
             (
                 <div key={post.slug} className="widgetItem">
                     <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
-                    <Link to={`/post/${post.slug}`} key={post.slug} className="widgetItemLink">{post.title}</Link>
+                    <Link href={`/blog/${post.slug}`} key={post.slug} className="widgetItemLink">{post.title}</Link>
                 </div>
             ))}
         </div>

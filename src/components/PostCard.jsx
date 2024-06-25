@@ -2,11 +2,11 @@ import React from 'react';
 
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const PostCard = ({ post }) =>
 {
-    const postContent = post.content.raw.children.map((child, index) =>
+   /* const postContent = post.content.raw.children.map((child, index) =>
     {
         if (child.type === 'paragraph')
             return <p key={index}>{child.children[0].text}</p>;
@@ -17,7 +17,7 @@ const PostCard = ({ post }) =>
             return null;
         }
     });
-
+*/
     return(
         <div className="postCard">
             <div className="headers">
@@ -26,7 +26,7 @@ const PostCard = ({ post }) =>
                 <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
             </div>
             <div className="postButton">
-                <Link to={`/post/${post.slug}`}>
+                <Link href={`/blog/${post.slug}`}>
                     <span className="buttonText">Continue Reading</span>
                 </Link>
             </div>

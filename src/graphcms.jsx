@@ -20,9 +20,6 @@ export const fetchPosts = async () =>
             slug
             title
             excerpt
-            content {
-              raw
-            }
             id
             publishedAt
           }
@@ -33,6 +30,34 @@ export const fetchPosts = async () =>
     const result = await request(graphqlAPI, query)
     return result.postsConnection.edges;
 }
+
+export const fetchPostDetails = async (slug) => 
+  {
+      const query = gql`
+      query GetPostDetails($slug: String!){
+        post(where: { slug = $slug })
+          author {
+            biography
+            name
+            id
+            picture {
+              url
+            }
+          }
+          slug
+          title
+          excerpt
+          content {
+            raw
+          }
+          id
+          publishedAt
+      }
+      `;
+      const result = await request(graphqlAPI, query, { slug })
+      return result.post;
+  }
+  
 
 export const getRecentPosts = async () =>
 {
