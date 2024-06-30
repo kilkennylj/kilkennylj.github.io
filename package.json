@@ -25,9 +25,7 @@
     "export": "next export"
   },
   "eslintConfig": {
-    "extends": [
-      "next/core-web-vitals"
-    ]
+    "extends": "next/core-web-vitals"
   },
   "browserslist": {
     "production": [
@@ -40,8 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^9.6.0"
   }
 }
