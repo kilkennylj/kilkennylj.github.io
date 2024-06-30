@@ -33,7 +33,7 @@ jobs:
       - name: Export static files
         run: npm run export
       - name: Delete Old Site
-        run: rm -rf out
+        run: rm -rf docs
       - name: Rename "out" to "docs"
         run: mv out docs
       - name: Testing
