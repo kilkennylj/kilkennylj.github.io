@@ -29,11 +29,13 @@ jobs:
       - name: Build app
         run: npm run build
         env:
-          REACT_APP_GRAPHCMS_ENDPOINT: ${{ secrets.REACT_APP_GRAPHCMS_ENDPOINT }}
+          NEXT_PUBLIC_GRAPHCMS_ENDPOINT: ${{ secrets.NEXT_PUBLIC_GRAPHCMS_ENDPOINT }}
+      - name: Export static files
+        run: npm run export
       - name: Delete Old Site
-        run: rm -rf docs
-      - name: Change "build" to "docs"
-        run: mv build docs
+        run: rm -rf out
+      - name: Rename "out" to "docs"
+        run: mv out docs
       - name: Testing
         run: ls
       - name: Deploy
