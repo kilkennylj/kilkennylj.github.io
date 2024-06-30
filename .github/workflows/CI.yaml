@@ -30,8 +30,6 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_GRAPHCMS_ENDPOINT: ${{ secrets.NEXT_PUBLIC_GRAPHCMS_ENDPOINT }}
-      - name: Export static files
-        run: npm run export
       - name: Delete Old Site
         run: rm -rf docs
       - name: Rename "out" to "docs"
