@@ -2,15 +2,13 @@ import React from 'react';
 
 import '../styles/HomePage.css';
 
-import liamImage from "../images/liam.jpeg";
-
 function About ()
 {
     return(
         <div className="about">
             <h1 style={{ display: 'block', textAlign: 'center'}}>About Me</h1>
             <div className="aboutImgContainer">
-                <img className="aboutImg" src={liamImage} alt='Liam Kilkenny, creator of this webpage' />
+                <img className="aboutImg" src="/images/liam.jpeg" alt='Liam Kilkenny, creator of this webpage' />
             </div>
             <div className="aboutContent">
                 <p>

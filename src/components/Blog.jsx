@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../styles/BlogPage.css';
-import { PostCard } from '../components/';
+import { PostCard, PostWidget, Categories } from '../components/';
 import { fetchPosts } from '../graphcms';
 
 // All of the blog stuff is unfinished. Just wanted to add the files so I can easily remember the thought process.
@@ -39,8 +39,14 @@ function Blog()
     }
 
     return(
-        <div className="blog">
-            { posts.map((post) => (<PostCard post={post.node} key={post.node.id} />)) }
+        <div className="blogContainer">
+            <div className="blog">
+                { posts.map((post) => (<PostCard post={post.node} key={post.node.id} />)) }
+            </div>
+            <div className="sidebar">
+                <PostWidget />
+                <Categories />
+            </div>
         </div>
     );
 };

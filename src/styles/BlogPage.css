@@ -7,6 +7,7 @@
 .blogContainer
 {
   display: flex;
+  flex-direction: row;
   min-height: 80vh;
   background: #CFC7FF;
   flex-direction: row;
@@ -28,13 +29,80 @@
   flex-direction: column;
   background-color: #00A4D6;
   padding: 2rem;
-  max-width: 90%;
+  width: 70%;
   border: solid #03002E;
   margin-bottom: 1vh;
 }
+
+.postButton
+{
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1vh;
+  border: .2rem solid #03002E;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  flex-direction: column;
+  background-color: #03002E;
+}
+
+.buttonText
+{
+  color: #F8F1FF;
+}
+
+.buttonText:hover
+{
+  color: #006E90;
+  border-color: #006E90;
+}
+
+.buttonText 
+{
+  color: inherit;
+  text-decoration: none;
+}
+
 
 .headers
 {
   text-align: center;
   border: solid #03002E;
+}
+
+.widgetContainer
+{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.widgetItem
+{
+  display: flex;
+  flex-direction: column;
+  color: #03002E;
+  background: white;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.widgetItemLink:hover
+{
+  color: #03002E;
+}
+
+h3
+{
+  border-bottom: .2rem solid #03002E;
+}
+
+.category
+{
+  display: block;
+  color: black;
 }
