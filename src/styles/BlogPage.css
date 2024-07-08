@@ -106,3 +106,20 @@ h3
   display: block;
   color: black;
 }
+
+.blogPost
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #00A4D6;
+  padding: 2rem;
+  width: 70%;
+  border: solid #03002E;
+  margin-bottom: 1vh;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: column;
+}
