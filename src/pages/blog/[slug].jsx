@@ -1,9 +1,11 @@
+// Comments require API which githubpages does not support
+
 import React from 'react';
 
 import '../../styles/BlogPage.css';
 
 import { fetchPosts, fetchPostDetails } from '../../graphcms';
-import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories } from '../../components'
+import { PostDetail, PostWidget, Author, Categories } from '../../components'
 
 const PostDetails = ({ post }) =>
 {
@@ -12,8 +14,6 @@ const PostDetails = ({ post }) =>
             <div className="blog">
                 <PostDetail post={ post }/>
                 <Author author={ post.author }/>
-                <CommentsForm slug={ post.slug }/>
-                <Comments slug={ post.slug }/>
             </div>
             <div className="sidebar">
                 <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />

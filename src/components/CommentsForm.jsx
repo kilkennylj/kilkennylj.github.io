@@ -1,4 +1,8 @@
+// Comments require API which githubpages does not support
+
 import React, { useRef, useEffect, useState } from 'react';
+
+import { submitComment } from '../graphcms';
 
 const CommentsForm = ({ slug }) =>
 {
@@ -9,6 +13,11 @@ const CommentsForm = ({ slug }) =>
     const nameEl = useRef();
     const emailEl = useRef();
     const storeDataEl = useRef();
+
+    useEffect(() => {
+        nameEl.current.value = window.localStorage.getItem('name');
+        emailEl.current.value = window.localStorage.getItem('email');
+    }, [])
 
     const handleCommentSubmission = () =>
     {
@@ -29,15 +38,23 @@ const CommentsForm = ({ slug }) =>
 
         if(storeData)
         {
-            localStorage.setItem('name', name)
-            localStorage.setItem('email', email);
+            window.localStorage.setItem('name', name);
+            window.localStorage.setItem('email', email);
         }
 
         else
         {
-            localStorage.remove('name', name)
-            localStorage.remove('email', email);
+            window.localStorage.removeItem('name', name);
+            window.localStorage.removeItem('email', email);
         }
+
+        submitComment(commentObj)
+            .then((res) => {
+                setShowSuccessMessage(true);
+                setTimeout(() => {
+                    setShowSuccessMessage(false);
+                }, 3000);
+            })
     }
 
     // These first three classNames suck but I couldn't think of anything else lol.
