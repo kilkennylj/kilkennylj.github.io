@@ -17,8 +17,8 @@ const Categories = () =>
         <div className="widgetContainer">
             <h3>Categories</h3>
             {categories.map((category) => (
-                <div className="widgetItem">
-                    <Link key={category.slug} href={`category/${category.slug}`}>
+                <div key={category.slug} className="widgetItem">
+                    <Link href={`category/${category.slug}`}>
                         <span className="category">{category.name}</span>
                     </Link>
                 </div>

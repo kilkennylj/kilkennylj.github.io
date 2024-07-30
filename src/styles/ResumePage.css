@@ -7,4 +7,14 @@
     max-width: 100vw;
     font-size: 1.25rem;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeContainer
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 80vh;
 }

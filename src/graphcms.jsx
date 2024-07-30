@@ -20,7 +20,7 @@ export const fetchPosts = async () => {
                         title
                         excerpt
                         id
-                        publishedAt
+                        date
                         categories {
                             name
                             slug
@@ -52,7 +52,7 @@ export const fetchPostDetails = async (slug) => {
                     }
                 }
                 slug
-                publishedAt
+                date
                 categories {
                     name
                     slug
@@ -69,7 +69,7 @@ export const getRecentPosts = async () => {
         query GetRecentPosts {
             posts(orderBy: createdAt_ASC, last: 3) {
                 title
-                publishedAt
+                date
                 slug
             }
         }
@@ -86,7 +86,7 @@ export const getSimilarPosts = async (categories, slug) => {
                 last: 3
             ) {
                 title
-                publishedAt
+                date
                 slug
             }
         }
@@ -107,4 +107,17 @@ export const getCategories = async () => {
 
     const result = await request(graphqlAPI, query);
     return result.categories;
+}
+
+// Comments require API which githubpages does not support
+export const submitComment = async (obj) => {
+    const result = await fetch('/api/comments', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(obj),
+    });
+
+    return result.json();
 }

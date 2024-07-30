@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../styles/ResumePage.css';
+import Resume from '../components/Resume';
 
 const ResumePage = () =>
 {
     return(
     <div className="pageContainer">
-        <h1>Work in Progress</h1>
+        <Resume />
     </div>
     );
 }
