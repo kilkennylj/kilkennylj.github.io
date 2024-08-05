@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../styles/ProjectsPage.css';
+import Projects from '../components/Projects';
 
 const ProjectsPage = () =>
 {
     return(
     <div className="pageContainer">
-        <h1>Work in Progress</h1>
+        <Projects />
     </div>
     );
 }
