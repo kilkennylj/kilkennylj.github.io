@@ -1,12 +1,13 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import '../styles/ProjectsPage.css';
 
-const ProjectCard = () =>
+const ProjectCard = ({ content }) =>
 {
     return(
-        <div>
-
+        <div className="projectCard">
+            <ReactMarkdown>{content}</ReactMarkdown>
         </div>
     );
 }

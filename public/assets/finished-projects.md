@@ -1,12 +1,3 @@
-# Completed Projects
-
-## Template
-- Date - Range
-
-Description
-
-[GitHub Repository](https://github.com/)
-
 ## Wave Contact Manager
 - January 2024 - February 2024
 
@@ -16,7 +7,6 @@ As the database manager, I used MySQL to set up the database, with different use
 This project was created using a LAMP stack and took around one month. 
 
 [GitHub Repository](https://github.com/kilkennylj/Wave-Contact-Manager)
-
 
 ## Turntable
 - February 2024 - May 2024
@@ -28,5 +18,3 @@ As an API developer, I worked with LastFM's API and Spotify's API to make the co
 This project was created using a MERN stack: MongoDB, ExpressJS, ReactJS, and NodeJS.
 
 [GitHub Repository](https://github.com/kilkennylj/Turntable)
-
-# Current Projects
