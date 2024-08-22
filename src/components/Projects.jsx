@@ -1,5 +1,5 @@
 import React from 'react';
-import 'react-markdown';
+import { getMarkdownContent } from '../lib/markdown';
 
 import ProjectCard from './ProjectCard';
 
@@ -24,21 +24,15 @@ const Projects = ({ finProjects, unfinProjects }) =>
 }
 
 export async function getStaticProps() {
-    const finFile   = await fetch('assets/finished-content.md');
-    const unfinFile = await fetch('/assets/unfinished-content.md');
+    const finProjects   = await getMarkdownContent('/assets/finished-projects.md');
+    const unfinProjects = await getMarkdownContent('/assets/unfinished-projects.md');
     
-    const finContent   = await finFile.text();
-    const unfinContent = await unfinFile.text();
-  
-    const finProjects = finContent.split('##').filter(Boolean).map(content => '##' + content.trim());
-    const unfinProjects = unfinContent.split('##').filter(Boolean).map(content => '##' + content.trim());
-
     return {
       props: {
         finProjects,
         unfinProjects,
       },
     };
-  }
+}
 
 export default Projects;
