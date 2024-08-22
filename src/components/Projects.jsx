@@ -1,5 +1,4 @@
 import React from 'react';
-import { getMarkdownContent } from '../lib/markdown';
 
 import ProjectCard from './ProjectCard';
 
@@ -7,8 +6,6 @@ import '../styles/ProjectsPage.css';
 
 const Projects = ({ finProjects, unfinProjects }) =>
 {
-    console.log(finProjects)
-
     return(
         <div className="projectContainer">
             <div className="content">
@@ -21,18 +18,6 @@ const Projects = ({ finProjects, unfinProjects }) =>
             </div>
         </div>
     );
-}
-
-export async function getStaticProps() {
-    const finProjects   = await getMarkdownContent('/assets/finished-projects.md');
-    const unfinProjects = await getMarkdownContent('/assets/unfinished-projects.md');
-    
-    return {
-      props: {
-        finProjects,
-        unfinProjects,
-      },
-    };
 }
 
 export default Projects;
