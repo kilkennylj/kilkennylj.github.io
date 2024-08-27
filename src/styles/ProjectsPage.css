@@ -1,10 +1,52 @@
+@font-face
+{
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
 .pageContainer
 {
     display: flex;
-    height: 80vh;
+    align-items: center;
     background: #CFC7FF;
     flex-direction: row;
     max-width: 100vw;
     font-size: 1.25rem;
     padding: 1rem;
+}
+
+.projectContainer
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    background: #CFC7FF;
+    align-content: center;
+    max-width: 100vw;
+    font-size: 1.25rem;
+}
+
+.projectCard
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00A4D6;
+    padding: 2rem;
+    padding-bottom: 0;
+    width: 70%;
+    border: solid #03002E;
+    margin-bottom: 1vh;
+}
+
+h2
+{
+    border-bottom: solid thick #03002E;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
