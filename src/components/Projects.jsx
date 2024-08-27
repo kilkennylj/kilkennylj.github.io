@@ -13,7 +13,7 @@ const Projects = ({ finProjects, unfinProjects }) =>
                 { finProjects.map((project, index) => (<ProjectCard content={project} key={index} />)) }
             </div>
             <div className="content">
-                <h1>Unfinished Projects</h1>
+                <h1>Projects in Progress</h1>
                 { unfinProjects.map((project, index) => (<ProjectCard content={project} key={index} />)) }
             </div>
         </div>
