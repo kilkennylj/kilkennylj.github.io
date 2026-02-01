@@ -1,8 +1,9 @@
-## Honors Undergraduate Thesis
-- June 2024
+## Security Concerns in Agentic AI Systems
+- September 2025 - May 2026
 
-My honors undergraduate thesis is currently titled, "Using Deep-Learning Sequential Models and Contrastive Learning for Occupancy Prediction in Listings".
-The proposal for this project was completed in August 2024, and the thesis is planned to end in the Spring 2025 semester.
+This project was given to my senior design team by the Georgia Tech Research Institute. The aim of this project is to build an agentic artificial intelligence system and then examine the security concerns of the system so that proper defenses can be created. In this project, we focused on making the repository clean and understandable with concise documentation so that anyone could run the agentic system with any level of defenses applied to the system.
 
-This project's goal is to take data from insideairbnb.com and use different machine learning and deep learning models to predict different variables.
-The main focus is to predict occupancy of a listing, which will allow a customer or an owner to know when a desired listing will be available.
+For our agentic AI system, we created an orchestrator agent and 5 assistant agents which each had at least one tool. We created base versions for the agents and tools so that we could utilize inheritance and keep clarity in our repository. When the system is run, our chatbot DocTalk gives healthcare advice, handles appointments, calculates statistics, and gives information about diagnoses and prescriptions. It performs these actions by utilizing remote code execution, reading a SQL database, making API calls, and scraping websites.
+
+During the creation of the agentic AI system, I worked as the artificial intelligence team lead for this project. This position required me to create a proper object oriented file structure for our agents, meet regularly so that the work can be properly divided and developed, and brainstorm so the infrastructure pieces work properly with the agents. 
+
