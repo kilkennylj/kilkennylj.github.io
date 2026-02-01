@@ -121,3 +121,34 @@ export const submitComment = async (obj) => {
 
     return result.json();
 }
+
+export const fetchAllPostDetails = async () => {
+  const query = gql`
+    {
+      posts {
+        title
+        excerpt
+        content {
+          raw
+        }
+        author {
+          name
+          biography
+          id
+          picture {
+            url
+          }
+        }
+        slug
+        date
+        categories {
+          name
+          slug
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query);
+  return result.posts;
+};

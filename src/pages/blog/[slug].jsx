@@ -4,7 +4,7 @@ import React from 'react';
 
 import '../../styles/BlogPage.css';
 
-import { fetchPosts, fetchPostDetails } from '../../graphcms';
+import { fetchPosts, fetchAllPostDetails } from '../../graphcms';
 import { PostDetail, PostWidget, Author, Categories } from '../../components'
 
 const PostDetails = ({ post }) =>
@@ -27,10 +27,12 @@ export default PostDetails;
 
 export async function getStaticProps({ params })
 {
-    const data = (await fetchPostDetails(params.slug)) || [];
+    const posts = await fetchAllPostDetails();
 
-    return{
-        props: { post: data },
+    const post = posts.find((p) => p.slug === params.slug);
+
+    return {
+        props: { post: post },
     };
 }
 
