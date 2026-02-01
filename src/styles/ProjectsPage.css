@@ -50,3 +50,9 @@ h2
     flex-direction: column;
     align-items: center;
 }
+
+.projectCard a
+{
+    color: black;
+    text-decoration: underline;
+}

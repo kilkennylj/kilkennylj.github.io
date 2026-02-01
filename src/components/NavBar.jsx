@@ -4,6 +4,11 @@ import Link from 'next/link';
 
 import "../styles/NavBar.css"
 
+// Removing blog Link until I figure out the best course of action.
+// <li>
+//      <Link href="/blog">Blog</Link>
+// </li>
+
 const NavBar = () =>
 {
     return(
@@ -20,9 +25,6 @@ const NavBar = () =>
                 </li>
                 <li>
                     <Link href="/resume">Resume</Link>
-                </li>
-                <li>
-                    <Link href="/blog">Blog</Link>
                 </li>
             </ul>
         </div>
