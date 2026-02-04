@@ -7,7 +7,7 @@
 .homeContainer
 {
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
     background: #CFC7FF;
     flex-direction: row;
     max-width: 100vw;

@@ -33,7 +33,7 @@
     align-items: center;
     background-color: #00A4D6;
     padding: 2rem;
-    padding-bottom: 0;
+    /*padding-bottom: 0; Why did I do this? */
     width: 70%;
     border: solid #03002E;
     margin-bottom: 1vh;
