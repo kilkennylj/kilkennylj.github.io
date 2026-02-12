@@ -6,14 +6,14 @@ function About ()
 {
     return(
         <div className="about">
-            <h1 style={{ display: 'block', textAlign: 'center'}}>About Me</h1>
+            <h1>About Me</h1>
             <div className="aboutImgContainer">
                 <img className="aboutImg" src="/images/liam.jpeg" alt='Liam Kilkenny, creator of this webpage' />
             </div>
             <div className="aboutContent">
                 <p>
                     Hello, I am Liam Kilkenny, and this is my personal portfolio website.
-                    I am in my 3rd year at UCF, majoring in Computer Science and Mathematics.
+                    I am in my senior year at UCF, majoring in Computer Science and Mathematics.
                     I plan on graduating in Spring 2026.
                 </p>
                 <p>

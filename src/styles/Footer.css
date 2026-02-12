@@ -11,7 +11,7 @@
     background: #03002E;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: clamp(20px, 3vw, 32px);
     height: 10vh;
     color: #F8F1FF;
 }

@@ -7,3 +7,4 @@ For our agentic AI system, we created an orchestrator agent and 5 assistant agen
 
 During the creation of the agentic AI system, I worked as the artificial intelligence team lead for this project. This position required me to create a proper object oriented file structure for our agents, meet regularly so that the work can be properly divided and developed, and brainstorm so the infrastructure pieces work properly with the agents. 
 
+This project is currently in a private repository, but once the project has been completed, I will post a demo video or a series of demo videos.
