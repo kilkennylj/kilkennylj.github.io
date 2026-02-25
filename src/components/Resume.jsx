@@ -1,5 +1,3 @@
-import React from 'react';
-
 import '../styles/ResumePage.css';
 
 const Resume = () =>

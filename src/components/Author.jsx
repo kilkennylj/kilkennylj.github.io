@@ -1,5 +1,3 @@
-import React from 'react';
-
 // If I create a bio, put it in a p to the right of the name and img, make sure those two move left.
 
 const Author = ({ author }) =>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
@@ -23,7 +23,7 @@ function PostWidget ({ categories, slug })
                 setRelatedPosts(result)});
         }
         
-    }, [slug]);
+    }, [slug, categories]);
     return(
         <div className="widgetContainer">
             <h3>{slug ? 'Related Posts' : 'Recent Posts'}</h3>
@@ -31,7 +31,7 @@ function PostWidget ({ categories, slug })
             (
                 <div key={post.slug} className="widgetItem">
                     <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
-                    <Link href={`/blog/${post.slug}`} key={post.slug} className="widgetItemLink">{post.title}</Link>
+                    <Link href={`/blog/${post.slug}`} className="widgetItemLink">{post.title}</Link>
                 </div>
             ))}
         </div>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import HomeContent from '../components/HomeContent';
 import About from '../components/About';
 

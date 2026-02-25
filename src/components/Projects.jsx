@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ProjectCard from './ProjectCard';
 
 import '../styles/ProjectsPage.css';

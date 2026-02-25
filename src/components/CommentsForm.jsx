@@ -1,6 +1,6 @@
 // Comments require API which githubpages does not support
 
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 import { submitComment } from '../graphcms';
 

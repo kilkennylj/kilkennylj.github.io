@@ -1,5 +1,3 @@
-import React from 'react';
-
 import '../styles/BlogPage.css';
 import Moment from 'react-moment';
 import Link from 'next/link';
