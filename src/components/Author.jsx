@@ -9,7 +9,6 @@ const Author = ({ author }) =>
                 alt={author.name}
                 className="authorImg"
                 src={author.picture.url}
-                loading="lazy"
             />
         </div>
     )
