@@ -6,7 +6,7 @@ function About ()
         <div className="about">
             <h1>About Me</h1>
             <div className="aboutImgContainer">
-                <img className="aboutImg" src="/images/liam.jpeg" alt='Liam Kilkenny, creator of this webpage' />
+                <img className="aboutImg" src="/images/liam.jpeg" alt='Liam Kilkenny, creator of this webpage' loading="lazy" />
             </div>
             <div className="aboutContent">
                 <p>

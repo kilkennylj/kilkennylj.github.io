@@ -11,10 +11,8 @@ export default function Document() {
           content="Professional Portfolio Website developed by Liam Kilkenny"
         />
 
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
-
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/images/logo.svg" />
+        <link rel="apple-touch-icon" href="/images/logo.svg" />
       </Head>
       <body>
         <Main />

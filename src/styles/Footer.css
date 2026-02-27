@@ -52,3 +52,17 @@ li
     justify-content: center;
     gap: 1rem;
 }
+
+@media (max-width: 320px)
+{
+    .footerContainer
+    {
+        height: auto;
+
+    }
+
+    ul
+    {
+        gap: 1.5rem;
+    }
+}
