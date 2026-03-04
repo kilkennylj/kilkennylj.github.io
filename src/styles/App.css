@@ -50,3 +50,14 @@ body {
     flex-direction: column;
     flex: 1
 }
+
+:root
+{
+  --color-background: #282B2D;
+  --color-primary: #E8E6E3;
+  --color-accent: #0083AB;
+  --color-a: #E1C2FF;
+  --color-a-hover: #67D8FF;
+  --color-outline: #847B6D;
+  --color-contrast-background: #03002E;
+}

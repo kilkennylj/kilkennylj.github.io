@@ -8,12 +8,11 @@
 {
     display: flex;
     flex-direction: row;
-    background: #03002E;
+    background: var(--color-contrast-background);
     justify-content: center;
     align-items: center;
     font-size: clamp(20px, 3vw, 32px);
     height: 10vh;
-    color: #F8F1FF;
 }
 
 .contactInfo
@@ -42,7 +41,7 @@ ul
 
 a
 {
-    color: #00A4D6;
+    color: var(--color-a);
     text-decoration: none;
 }
 
