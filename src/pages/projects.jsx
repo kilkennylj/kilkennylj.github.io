@@ -1,7 +1,3 @@
-import React from 'react';
-
-import remarkHtml from 'remark-html';
-
 import { getMarkdownContent } from '../lib/markdown';
 import Projects from '../components/Projects';
 

@@ -51,6 +51,16 @@ h2
     align-items: center;
 }
 
+.projectCard p
+{
+    align-self: stretch;
+}
+
+.projectCard p:last-child
+{
+    align-self: center;
+}
+
 .projectCard a
 {
     color: black;
