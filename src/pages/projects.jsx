@@ -1,4 +1,5 @@
 import { getMarkdownContent } from '../lib/markdown';
+import { processProjects } from '../lib/processProjects';
 import Projects from '../components/Projects';
 
 const ProjectsPage = ({ finProjects, unfinProjects }) =>
@@ -11,17 +12,6 @@ const ProjectsPage = ({ finProjects, unfinProjects }) =>
         <Projects finProjects={finProjects} unfinProjects={unfinProjects}/>
     </div>
     );
-}
-
-function processProjects(projects)
-{
-    let showdown = require('showdown');
-    let converter = new showdown.Converter();
-    
-    for (let i = 0; i < projects.length; i++)
-      projects[i] = converter.makeHtml(projects[i]);
-
-    return projects;
 }
 
 export async function getStaticProps() {
