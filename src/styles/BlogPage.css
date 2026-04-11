@@ -9,10 +9,11 @@
   display: flex;
   flex-direction: row;
   min-height: 80vh;
-  background: #CFC7FF;
+  background: var(--color-background);
   max-width: 100vw;
   font-size: 1.25rem;
   padding: 1rem;
+  color: var(--color-primary)
 }
 
 .blog
@@ -26,10 +27,9 @@
 {
   display: flex;
   flex-direction: column;
-  background-color: #00A4D6;
+  background-color: var(--color-accent);
   padding: 2rem;
   width: 70%;
-  border: solid #03002E;
   margin-bottom: 1vh;
 }
 
@@ -38,23 +38,23 @@
   display: inline-block;
   padding: 1rem;
   margin-top: 1vh;
-  border: .2rem solid #03002E;
+  border: .2rem solid var(--color-contrast-background);
   border-radius: 1rem;
   text-decoration: none;
   text-align: center;
   flex-direction: column;
-  background-color: #03002E;
+  background-color: var(--color-contrast-background);
 }
 
 .buttonText
 {
-  color: #F8F1FF;
+  color: var(--color-primary);
 }
 
 .buttonText:hover
 {
-  color: #006E90;
-  border-color: #006E90;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .buttonText 
@@ -67,53 +67,64 @@
 .headers
 {
   text-align: center;
-  border: solid #03002E;
+  border: solid var(--color-contrast-background);
+}
+
+h2
+{
+  border-bottom: none;
 }
 
 .widgetContainer
 {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--color-primary);
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 2rem;
+  color: var(--color-contrast-background);
 }
 
 .widgetItem
 {
   display: flex;
   flex-direction: column;
-  color: #03002E;
-  background: white;
+  color: var(--color-background);
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
 
+.widgetItemLink
+{
+  text-decoration: underline;
+  color: var(--color-background)
+}
+
 .widgetItemLink:hover
 {
-  color: #03002E;
+  color: var(--color-background);
 }
 
 h3
 {
-  border-bottom: .2rem solid #03002E;
+  border-bottom: .2rem solid var(--color-background);
 }
 
 .category
 {
   display: block;
-  color: black;
+  color: var(--color-background);
 }
 
 .blogPost
 {
   display: flex;
   flex-direction: column;
-  background-color: #00A4D6;
+  background-color: var(--color-accent);
   padding: 2rem;
   width: 90%;
-  border: solid #03002E;
+  border: solid var(--color-background);
   margin-bottom: 1vh;
 }
 
@@ -141,7 +152,7 @@ div:nth-of-type(2) p
   align-items: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
-  border: solid #03002E;
+  border: solid var(--color-background);
   padding-left: 35%;
   padding-right: 35%;
 }
@@ -161,7 +172,7 @@ div:nth-of-type(2) p
   padding-right: 5%;
   padding-bottom: 1vh;
   width: 30%;
-  border: solid #03002E;
+  border: solid var(--color-background);
   margin-top: 1vh;
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 export const fetchPosts = async () => {
     const query = gql`
         {
-            postsConnection {
+            postsConnection(orderBy: date_DESC) {
                 edges {
                     node {
                         author {
@@ -67,7 +67,7 @@ export const fetchPostDetails = async (slug) => {
 export const getRecentPosts = async () => {
     const query = gql`
         query GetRecentPosts {
-            posts(orderBy: createdAt_ASC, last: 3) {
+            posts(orderBy: createdAt_DESC, last: 3) {
                 title
                 date
                 slug
@@ -125,7 +125,7 @@ export const submitComment = async (obj) => {
 export const fetchAllPostDetails = async () => {
   const query = gql`
     {
-      posts {
+      posts(orderBy: createdAt_DESC) {
         title
         excerpt
         content {

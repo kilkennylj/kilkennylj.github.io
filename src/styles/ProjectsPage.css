@@ -36,13 +36,13 @@
     padding: 2rem;
     /*padding-bottom: 0; Why did I do this? */
     width: 70%;
-    border: solid var(--color-outline);
+    /*border: solid var(--color-outline);*/
     margin-bottom: 1vh;
 }
 
 h2
 {
-    border-bottom: solid thick var(--color-outline);
+    border-bottom: solid thick var(--color-background);
 }
 
 .content

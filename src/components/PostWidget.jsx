@@ -30,7 +30,7 @@ function PostWidget ({ categories, slug })
             {relatedPosts.map((post) =>
             (
                 <div key={post.slug} className="widgetItem">
-                    <Moment date={post.publishedAt} format="MM/DD/YYYY"/>
+                    <Moment date={post.date} format="MM/DD/YYYY"/>
                     <Link href={`/blog/${post.slug}`} className="widgetItemLink">{post.title}</Link>
                 </div>
             ))}
